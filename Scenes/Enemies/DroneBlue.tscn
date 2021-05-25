@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Enemies/Enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Sprites/Enemy/idle_drone_blue.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12.9703, 10.961 )
+
+[node name="DroneBlue" instance=ExtResource( 1 )]
+collision_layer = 12
+collision_mask = 3
+speed = 120
+
+[node name="EnemySprite" parent="." index="0"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" parent="HitBox" index="0"]
+position = Vector2( 9.55235, 10.4499 )
+shape = SubResource( 1 )
+
+[editable path="HitBox"]

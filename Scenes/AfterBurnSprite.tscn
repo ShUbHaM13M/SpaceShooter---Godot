@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Sprites/AfterBurn.png" type="Texture" id=1]
+
+[node name="AfterBurnSprite" type="Sprite"]
+position = Vector2( 0, 45.5 )
+scale = Vector2( 1.81086, 1.81086 )
+texture = ExtResource( 1 )
+hframes = 3
+region_rect = Rect2( 0, 0, 9.24332, 9.88317 )

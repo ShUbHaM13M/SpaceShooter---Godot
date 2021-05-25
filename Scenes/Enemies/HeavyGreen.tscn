@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Enemies/Enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Sprites/Enemy/idle_heavy_green.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12.3203, 10.4866 )
+
+[node name="HeavyGreen" instance=ExtResource( 1 )]
+speed = 80
+max_health = 5
+
+[node name="EnemySprite" parent="." index="0"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" parent="HitBox" index="0"]
+position = Vector2( 9.53517, 8.74058 )
+shape = SubResource( 1 )
+
+[editable path="HitBox"]
